@@ -26,7 +26,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.Base.BaseClass;
 
-
 public class Action extends BaseClass {
 
 	public static final String switchToNewWindow = null;
@@ -229,7 +228,7 @@ public class Action extends BaseClass {
 	 * @param locator     : Action to be performed on element (Get it from Object
 	 *                    repository)
 	 * 
-	 * @param driver : VisibleText wish to select from dropdown list.
+	 * @param driver      : VisibleText wish to select from dropdown list.
 	 * 
 	 * @param locatorName : Meaningful name to the element (Ex:Year Dropdown, items
 	 *                    Listbox etc..)
@@ -718,8 +717,8 @@ public class Action extends BaseClass {
 	}
 
 	public static void explicitWait(WebDriver driver, WebElement element, long timeOut) {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut)); // Correct for Selenium 4+
-	    wait.until(ExpectedConditions.visibilityOf(element));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut)); // Correct for Selenium 4+
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
 	public static void pageLoadTimeOut(WebDriver driver, int timeOut) {

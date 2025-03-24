@@ -13,7 +13,6 @@ public class NewExcelLibrary
 {
 	public static String path = System.getProperty("user.dir") + "/src/test/resources/testdata/TestData.xlsx";
 
-//		public  String path;
 		public FileInputStream fis = null;
 		public FileOutputStream fileOut = null;
 		private XSSFWorkbook workbook = null;

@@ -6,11 +6,12 @@
 		</listener>
 	</listeners>
 	<test thread-count="3" name="Test_All">
-	<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			
+			<class name="com.testcases.HomePageTest" />
+			<class name="com.testcases.LoginPageTest" />
 			<class name="com.testcases.LogoutPageTest" />
-			
+
 		</classes>
 	</test> <!-- Test_All -->
 </suite> <!-- Suite -->
